@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # resources :posts
   # resources :users, :only => [:index]
-  resources :users, :only => [:index] do
+  resources :users, :only => [:index, :destroy] do
     resources :posts
     end
 
